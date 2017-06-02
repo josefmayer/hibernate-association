@@ -76,6 +76,17 @@ public class Dao {
         return resultList;
     }
 
+    public List<Hotel> queryJoin(){
+        EntityManager em = emf.createEntityManager();
+        em.getTransaction().begin();
+
+        Query query = em.createQuery("select h from TouristCity tc inner join tc.hotels h ");
+        List<Hotel> resultList = query.getResultList();
+
+        em.getTransaction().commit();
+        em.close();
+        return resultList;
+    }
 
 
 

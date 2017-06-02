@@ -23,6 +23,8 @@ public class CityHotelService {
         printAllHotels();
         printHotelByName();
 
+        printHotelsQueryJoin();
+
 
         emf.close();
     }
@@ -102,6 +104,14 @@ public class CityHotelService {
         System.out.println("***** Hotel *******");
         for (Hotel hotel : hotelList){
             System.out.println(hotel.getName() + " " + hotel.getStreet());
+        }
+    }
+
+    public void printHotelsQueryJoin(){
+        List<Hotel> hotelList = dao.queryJoin();
+        System.out.println("***** Hotels *******");
+        for (Hotel hotel : hotelList){
+            System.out.println(hotel.getName());
         }
     }
 
