@@ -1,5 +1,6 @@
 package josefmayer;
 
+
 import josefmayer.City_Hotel.CityHotelService;
 import org.junit.Test;
 
@@ -13,5 +14,6 @@ public class Test_CityHotelService {
         CityHotelService cityHotelApp = new CityHotelService();
         cityHotelApp.cityHotelAppMain();
     }
+
 
 }

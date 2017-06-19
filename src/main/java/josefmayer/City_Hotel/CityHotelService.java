@@ -13,7 +13,9 @@ public class CityHotelService {
     TouristCity city1, city2, city3, city4,city5, city6;
 
     public void cityHotelAppMain(){
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpa-example");
+        //EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpa-example-mysql");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpa-example-mssqlserver");
+
         dao = new Dao(emf);
 
         insertTouristCity();
@@ -24,7 +26,6 @@ public class CityHotelService {
         printHotelByName();
 
         printHotelsQueryJoin();
-
 
         emf.close();
     }
@@ -114,5 +115,6 @@ public class CityHotelService {
             System.out.println(hotel.getName());
         }
     }
+
 
 }
