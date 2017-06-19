@@ -5,7 +5,7 @@ Association 1:N <br />
 
 
 ### Technologies
-JPA, Hibernate, Association, MySQL <br />
+JPA, Hibernate, Association<br />
 Databases: MySQL, MSSQL <br />
 
 
@@ -27,12 +27,12 @@ Hibernate creates joincolumn/foreign key column according to the @ManyToOne anno
 
 ### Steps
 ##### MYSQL
-Use persistence unit 'jpa-example-mysql'
+Use persistence unit 'jpa-example-mysql'  <br />
 Start MySQL <br />
 Create table 'jpa_example' <br />
 
 ##### MSSQLSERVER
-Use persistence unit 'jpa-example-mssqlserver'
+Use persistence unit 'jpa-example-mssqlserver'  <br />
 Start MSSQLSERVER <br />
 Create table 'jpa_example' <br />
 
